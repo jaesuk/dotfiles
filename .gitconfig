@@ -1,0 +1,10 @@
+[user]
+    name = Jaesuk Hwang
+    email = {ID}+{username}@users.noreply.github.com
+
+[core]
+    editor = nvim
+
+[init]
+	defaultBranch = main
+
