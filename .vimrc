@@ -26,6 +26,11 @@ call plug#begin('~/.vim/plugged')
 
     " Perl
     Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' } 
+
+    Plug 'rust-lang/rust.vim'
+
+    Plug 'elixir-editors/vim-elixir'
+
 call plug#end()
 
 
@@ -101,4 +106,12 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
     \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
 let NERDTreeShowHidden=1
+
+
+
+"
+" Rust
+"
+let g:rustfmt_autosave = 1
+let g:rust_clip_command = 'xclip -selection clipboard'
 
