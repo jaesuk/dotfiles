@@ -1,9 +1,9 @@
 [user]
     name = Jaesuk Hwang
-    email = {ID}+{username}@users.noreply.github.com
+    email = jaesuk.hwang@gmail.com
 
 [core]
-    editor = nvim
+    editor = vim
 
 [init]
 	defaultBranch = main
